@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Gold" load_steps=4 format=3 uid="uid://2mtxicftcqhq"]
+
+[ext_resource type="Texture2D" uid="uid://be57hge22mrd" path="res://assets/Pickups/Spirte-Coin.png" id="1_yo82v"]
+[ext_resource type="Script" uid="uid://vum7n1fqf8rs" path="res://scenes/Gold.gd" id="2_oo1lb"]
+[ext_resource type="AudioStream" uid="uid://bw4ydgm8v1ane" path="res://assets/SFX/collect-gold.wav" id="3_oo1lb"]
+
+[resource]
+script = ExtResource("2_oo1lb")
+gold = 5
+title = "Gold"
+icon = ExtResource("1_yo82v")
+description = "+5 Gold"
+sound = ExtResource("3_oo1lb")
+weight = 10.0
+metadata/_custom_type_script = "uid://vum7n1fqf8rs"

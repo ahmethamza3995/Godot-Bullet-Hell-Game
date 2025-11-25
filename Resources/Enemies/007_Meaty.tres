@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=5 format=3 uid="uid://bprg4k2pr3xvr"]
+
+[ext_resource type="Script" uid="uid://dby207qjtguv5" path="res://scenes/PickupResource.gd" id="1_rvwkt"]
+[ext_resource type="Resource" uid="uid://ct2uks3roccdp" path="res://Resources/Pickups/Blue Gem.tres" id="2_dou8l"]
+[ext_resource type="Script" uid="uid://bck7uluredqp0" path="res://scenes/EnemyType.gd" id="3_akpyt"]
+[ext_resource type="Texture2D" uid="uid://c0grn22y52hkt" path="res://assets/Animated Enemies/007_Meaty.png" id="4_dc4xj"]
+
+[resource]
+script = ExtResource("3_akpyt")
+title = "Meaty"
+texture = ExtResource("4_dc4xj")
+health = 60.0
+damage = 60.0
+frames = 4
+drops = Array[ExtResource("1_rvwkt")]([ExtResource("2_dou8l")])
+metadata/_custom_type_script = "uid://bck7uluredqp0"

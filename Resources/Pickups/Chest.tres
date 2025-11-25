@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Chest" load_steps=4 format=3 uid="uid://s7ymf3m3d0hn"]
+
+[ext_resource type="Texture2D" uid="uid://dtmaye0gi3qkm" path="res://assets/Chest/Sprite-Chest.png" id="1_sm8q6"]
+[ext_resource type="Script" uid="uid://ca4k6hvke3gap" path="res://scenes/ChestResource.gd" id="2_hk1k0"]
+[ext_resource type="AudioStream" uid="uid://ltfise3r382n" path="res://assets/SFX/chest-open.wav" id="3_hk1k0"]
+
+[resource]
+script = ExtResource("2_hk1k0")
+title = "Boss Chest"
+icon = ExtResource("1_sm8q6")
+description = ""
+sound = ExtResource("3_hk1k0")
+weight = 0.0
+metadata/_custom_type_script = "uid://ca4k6hvke3gap"

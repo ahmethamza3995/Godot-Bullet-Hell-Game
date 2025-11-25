@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3 uid="uid://cb3sduvqsdvgv"]
+
+[ext_resource type="Script" uid="uid://c5mb4db3jvbfx" path="res://scenes/Stats.gd" id="1_bgc77"]
+[ext_resource type="Texture2D" uid="uid://bqxpi1l0ybwd7" path="res://assets/Characters/Character 1.png" id="2_t0b65"]
+[ext_resource type="Script" uid="uid://db40nlnbmj2up" path="res://scenes/Character.gd" id="3_wju3j"]
+[ext_resource type="Resource" uid="uid://csjq1jh4wjpct" path="res://Resources/Weapons/Magic Wand.tres" id="4_bgc77"]
+
+[sub_resource type="Resource" id="Resource_vtdrc"]
+script = ExtResource("1_bgc77")
+description = ""
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+luck = 0.0
+metadata/_custom_type_script = "uid://c5mb4db3jvbfx"
+
+[resource]
+script = ExtResource("3_wju3j")
+title = "Purple Rhino"
+icon = ExtResource("2_t0b65")
+cost = 0
+animation_name = "purple"
+base_stats = SubResource("Resource_vtdrc")
+starting_weapon = ExtResource("4_bgc77")
+metadata/_custom_type_script = "uid://db40nlnbmj2up"

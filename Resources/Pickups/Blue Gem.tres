@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Gem" load_steps=4 format=3 uid="uid://ct2uks3roccdp"]
+
+[ext_resource type="Texture2D" uid="uid://y5smgpbt6knr" path="res://assets/Level Up & Option/blue_gem.png" id="1_nevim"]
+[ext_resource type="Script" uid="uid://b4xmi0ufflolq" path="res://scenes/Gem.gd" id="2_tmmxm"]
+[ext_resource type="AudioStream" uid="uid://dsnmnp2il8xbp" path="res://assets/SFX/gaining-xp.wav" id="3_tmmxm"]
+
+[resource]
+script = ExtResource("2_tmmxm")
+XP = 1.0
+title = "Blue Gem"
+icon = ExtResource("1_nevim")
+description = "Gains Experience Points."
+sound = ExtResource("3_tmmxm")
+weight = 0.0
+metadata/_custom_type_script = "uid://b4xmi0ufflolq"

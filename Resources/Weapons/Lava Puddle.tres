@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="MultiDamagingArea" load_steps=15 format=3 uid="uid://106l7hwe3apo"]
+
+[ext_resource type="Resource" uid="uid://d1o3w4nca1atu" path="res://Resources/Evolution/Lava Pool.tres" id="1_cf7ry"]
+[ext_resource type="Texture2D" uid="uid://bkkgg3v721ry6" path="res://assets/Weapon & Items/Sprite-LavaPuddle-Alternative.png" id="2_13n7y"]
+[ext_resource type="Resource" uid="uid://bwxlaliv5vim3" path="res://Resources/Passive Items/Area.tres" id="2_e7ml7"]
+[ext_resource type="PackedScene" uid="uid://ojvwgwnw1ase" path="res://scenes/projectile.tscn" id="2_wkkcw"]
+[ext_resource type="Script" uid="uid://dg7eypwen3k3c" path="res://scenes/Weapon Scripts/MultiDamagingArea.gd" id="3_e7ml7"]
+[ext_resource type="Material" uid="uid://b8qr77im52ifr" path="res://Particles/Weapon Particles/fire.tres" id="4_13n7y"]
+[ext_resource type="Script" uid="uid://br43tdi2jmpfw" path="res://scenes/Upgrade.gd" id="4_e7ml7"]
+[ext_resource type="Script" uid="uid://cychuqycwr5j5" path="res://scenes/Weapon Scripts/MultiDamagingAreaUpgrade.gd" id="5_2e8io"]
+[ext_resource type="AudioStream" uid="uid://cmc8vhuvmdg67" path="res://assets/SFX/lava sound.wav" id="5_cf7ry"]
+
+[sub_resource type="Resource" id="Resource_cf7ry"]
+script = ExtResource("5_2e8io")
+amount = 0
+area = 0.0
+damage = 2.0
+description = "+2 Damage"
+metadata/_custom_type_script = "uid://cychuqycwr5j5"
+
+[sub_resource type="Resource" id="Resource_13n7y"]
+script = ExtResource("5_2e8io")
+amount = 2
+area = 0.0
+damage = 0.0
+description = "+2 Amount"
+metadata/_custom_type_script = "uid://cychuqycwr5j5"
+
+[sub_resource type="Resource" id="Resource_wkkcw"]
+script = ExtResource("5_2e8io")
+amount = 0
+area = 0.5
+damage = 0.0
+description = "+%50 Area"
+metadata/_custom_type_script = "uid://cychuqycwr5j5"
+
+[sub_resource type="Resource" id="Resource_e7ml7"]
+script = ExtResource("5_2e8io")
+amount = 2
+area = 0.0
+damage = 0.0
+description = "+2 Amount"
+metadata/_custom_type_script = "uid://cychuqycwr5j5"
+
+[sub_resource type="Resource" id="Resource_2e8io"]
+script = ExtResource("5_2e8io")
+amount = 0
+area = 0.0
+damage = 2.0
+description = "+2 Damage"
+metadata/_custom_type_script = "uid://cychuqycwr5j5"
+
+[resource]
+script = ExtResource("3_e7ml7")
+amount = 1
+area = 3.0
+delay = 0.2
+damage = 1.0
+cooldown = 4.0
+speed = 0.0
+projectile_node = ExtResource("2_wkkcw")
+upgrades = Array[ExtResource("4_e7ml7")]([SubResource("Resource_cf7ry"), SubResource("Resource_13n7y"), SubResource("Resource_wkkcw"), SubResource("Resource_e7ml7"), SubResource("Resource_2e8io")])
+item_needed = ExtResource("2_e7ml7")
+evolution = ExtResource("1_cf7ry")
+sound = ExtResource("5_cf7ry")
+particle = ExtResource("4_13n7y")
+title = "Lava Puddle"
+icon = ExtResource("2_13n7y")
+texture = ExtResource("2_13n7y")
+metadata/_custom_type_script = "uid://dg7eypwen3k3c"

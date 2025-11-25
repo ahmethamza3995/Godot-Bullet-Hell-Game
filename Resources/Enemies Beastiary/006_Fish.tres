@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=5 format=3 uid="uid://d0hm8i4whmp3k"]
+
+[ext_resource type="Script" uid="uid://dby207qjtguv5" path="res://scenes/PickupResource.gd" id="1_gfnmq"]
+[ext_resource type="Resource" uid="uid://ct2uks3roccdp" path="res://Resources/Pickups/Blue Gem.tres" id="2_mgfpp"]
+[ext_resource type="Script" uid="uid://bck7uluredqp0" path="res://scenes/EnemyType.gd" id="3_p0okt"]
+[ext_resource type="Texture2D" uid="uid://c3cvioybuah7h" path="res://assets/RPG Battlers 3/7 v1.png" id="4_gfnmq"]
+
+[resource]
+script = ExtResource("3_p0okt")
+title = "Fish"
+texture = ExtResource("4_gfnmq")
+health = 50.0
+damage = 50.0
+frames = 1
+drops = Array[ExtResource("1_gfnmq")]([ExtResource("2_mgfpp")])
+metadata/_custom_type_script = "uid://bck7uluredqp0"

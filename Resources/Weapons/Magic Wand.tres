@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="SingleShot" load_steps=16 format=3 uid="uid://csjq1jh4wjpct"]
+
+[ext_resource type="Resource" uid="uid://clmqhw3eouwle" path="res://Resources/Evolution/Holy Wand 2.tres" id="1_pckyg"]
+[ext_resource type="PackedScene" uid="uid://ojvwgwnw1ase" path="res://scenes/projectile.tscn" id="1_y3qg2"]
+[ext_resource type="Script" uid="uid://dswvdyfks1ddi" path="res://scenes/SingleShot.gd" id="2_86g81"]
+[ext_resource type="Resource" uid="uid://brwn883wu58p0" path="res://Resources/Passive Items/Magnet.tres" id="2_kk7dj"]
+[ext_resource type="Texture2D" uid="uid://bjh8y7lfg6l1u" path="res://assets/Weapon & Items/Sprite-MagicWand.png" id="3_lctqv"]
+[ext_resource type="Script" uid="uid://br43tdi2jmpfw" path="res://scenes/Upgrade.gd" id="4_86g81"]
+[ext_resource type="Material" uid="uid://b7y7ur2g1l8wr" path="res://Particles/Weapon Particles/Magic.tres" id="4_j6cq0"]
+[ext_resource type="AudioStream" uid="uid://dq55pty0t3nfg" path="res://assets/SFX/magic-wand-shooot.wav" id="5_kk7dj"]
+[ext_resource type="Script" uid="uid://pcs4lmb2a7fj" path="res://scenes/ProjectileUpgrade.gd" id="5_lctqv"]
+[ext_resource type="Texture2D" uid="uid://c8e0uhiv4d5cy" path="res://assets/Weapon & Items/Sprite-MagicWand-Bolt.png" id="7_emurs"]
+
+[sub_resource type="Resource" id="Resource_6uqvf"]
+script = ExtResource("5_lctqv")
+speed = 0.0
+damage = 0.0
+cooldown = 0.0
+description = "+1 Damage"
+metadata/_custom_type_script = "uid://pcs4lmb2a7fj"
+
+[sub_resource type="Resource" id="Resource_lctqv"]
+script = ExtResource("5_lctqv")
+speed = 0.0
+damage = 0.0
+cooldown = -0.2
+description = "-0.2 Cooldown"
+metadata/_custom_type_script = "uid://pcs4lmb2a7fj"
+
+[sub_resource type="Resource" id="Resource_pckyg"]
+script = ExtResource("5_lctqv")
+speed = 200.0
+damage = 0.0
+cooldown = 0.0
+description = "+200 Speed"
+metadata/_custom_type_script = "uid://pcs4lmb2a7fj"
+
+[sub_resource type="Resource" id="Resource_kk7dj"]
+script = ExtResource("5_lctqv")
+speed = 0.0
+damage = 0.0
+cooldown = 0.0
+description = "+2 Damage"
+metadata/_custom_type_script = "uid://pcs4lmb2a7fj"
+
+[sub_resource type="Resource" id="Resource_emurs"]
+script = ExtResource("5_lctqv")
+speed = 0.0
+damage = 0.0
+cooldown = -0.1
+description = "- 0.1 Cooldown"
+metadata/_custom_type_script = "uid://pcs4lmb2a7fj"
+
+[resource]
+script = ExtResource("2_86g81")
+damage = 3.0
+cooldown = 1.0
+speed = 100.0
+projectile_node = ExtResource("1_y3qg2")
+upgrades = Array[ExtResource("4_86g81")]([SubResource("Resource_6uqvf"), SubResource("Resource_lctqv"), SubResource("Resource_pckyg"), SubResource("Resource_kk7dj"), SubResource("Resource_emurs")])
+item_needed = ExtResource("2_kk7dj")
+evolution = ExtResource("1_pckyg")
+sound = ExtResource("5_kk7dj")
+particle = ExtResource("4_j6cq0")
+title = "Magic Wand"
+icon = ExtResource("3_lctqv")
+texture = ExtResource("7_emurs")
+metadata/_custom_type_script = "uid://dswvdyfks1ddi"

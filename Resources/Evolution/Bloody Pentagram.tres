@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DamagingArea" load_steps=7 format=3 uid="uid://co0ryptnadqhp"]
+
+[ext_resource type="Texture2D" uid="uid://7yswl8x10hc6" path="res://assets/Weapon & Items/Sprite-Pentagram-Red.png" id="1_pg05v"]
+[ext_resource type="PackedScene" uid="uid://ojvwgwnw1ase" path="res://scenes/projectile.tscn" id="2_g4re6"]
+[ext_resource type="Material" uid="uid://b8qr77im52ifr" path="res://Particles/Weapon Particles/fire.tres" id="2_ms3tk"]
+[ext_resource type="Script" uid="uid://bfwtgs2sj48bi" path="res://scenes/Weapon Scripts/DamagingArea.gd" id="3_yyuab"]
+[ext_resource type="AudioStream" uid="uid://ghs64alhjmtq" path="res://assets/SFX/bass-hit.wav" id="4_tcx77"]
+[ext_resource type="Script" uid="uid://br43tdi2jmpfw" path="res://scenes/Upgrade.gd" id="5_doe8g"]
+
+[resource]
+script = ExtResource("3_yyuab")
+angular_speed = 30.0
+area = 1.0
+damage = 10.0
+cooldown = 0.5
+speed = 0.0
+projectile_node = ExtResource("2_g4re6")
+upgrades = Array[ExtResource("5_doe8g")]([])
+sound = ExtResource("4_tcx77")
+particle = ExtResource("2_ms3tk")
+title = "Bloody Pentagram"
+icon = ExtResource("1_pg05v")
+texture = ExtResource("1_pg05v")
+metadata/_custom_type_script = "uid://bfwtgs2sj48bi"

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3 uid="uid://wh1xuevcxmvw"]
+
+[ext_resource type="Script" uid="uid://c5mb4db3jvbfx" path="res://scenes/Stats.gd" id="1_ddkol"]
+[ext_resource type="Texture2D" uid="uid://n6w3d2x2eyj7" path="res://assets/Characters/Character 3.png" id="2_fc3y2"]
+[ext_resource type="Script" uid="uid://db40nlnbmj2up" path="res://scenes/Character.gd" id="3_nte8o"]
+[ext_resource type="Resource" uid="uid://pjxu16532847" path="res://Resources/Weapons/Pentagram.tres" id="4_th2sx"]
+
+[sub_resource type="Resource" id="Resource_rnf6r"]
+script = ExtResource("1_ddkol")
+description = ""
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+luck = 0.0
+metadata/_custom_type_script = "uid://c5mb4db3jvbfx"
+
+[resource]
+script = ExtResource("3_nte8o")
+title = "Triple Eye"
+icon = ExtResource("2_fc3y2")
+cost = 0
+animation_name = "triple"
+base_stats = SubResource("Resource_rnf6r")
+starting_weapon = ExtResource("4_th2sx")
+metadata/_custom_type_script = "uid://db40nlnbmj2up"

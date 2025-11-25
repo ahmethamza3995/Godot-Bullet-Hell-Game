@@ -1,0 +1,69 @@
+[gd_resource type="Resource" script_class="DamagingArea" load_steps=15 format=3 uid="uid://pjxu16532847"]
+
+[ext_resource type="Resource" uid="uid://co0ryptnadqhp" path="res://Resources/Evolution/Bloody Pentagram.tres" id="1_hbjj8"]
+[ext_resource type="Texture2D" uid="uid://mtf3k010t8ia" path="res://assets/Weapon & Items/Sprite-Pentagram.png" id="2_7wnbx"]
+[ext_resource type="Resource" uid="uid://4131wh0d01ae" path="res://Resources/Passive Items/Max Health.tres" id="3_nthip"]
+[ext_resource type="Material" uid="uid://b1qtukv5lh8vk" path="res://Particles/Weapon Particles/Radial.tres" id="4_7wnbx"]
+[ext_resource type="PackedScene" uid="uid://ojvwgwnw1ase" path="res://scenes/projectile.tscn" id="4_bxm45"]
+[ext_resource type="Script" uid="uid://bfwtgs2sj48bi" path="res://scenes/Weapon Scripts/DamagingArea.gd" id="5_0m5i6"]
+[ext_resource type="AudioStream" uid="uid://ghs64alhjmtq" path="res://assets/SFX/bass-hit.wav" id="6_j0lm4"]
+[ext_resource type="Script" uid="uid://br43tdi2jmpfw" path="res://scenes/Upgrade.gd" id="7_2q626"]
+[ext_resource type="Script" uid="uid://dxrnue3daoiom" path="res://scenes/Weapon Scripts/DamagingAreaUpgrade.gd" id="8_sonwr"]
+
+[sub_resource type="Resource" id="Resource_ju6f5"]
+script = ExtResource("8_sonwr")
+area = 0.0
+damage = 2.0
+cooldown = 0.0
+description = "+2 Damage"
+metadata/_custom_type_script = "uid://dxrnue3daoiom"
+
+[sub_resource type="Resource" id="Resource_w0s65"]
+script = ExtResource("8_sonwr")
+area = 0.0
+damage = 0.0
+cooldown = -0.2
+description = "-0.2s Cooldown"
+metadata/_custom_type_script = "uid://dxrnue3daoiom"
+
+[sub_resource type="Resource" id="Resource_67rx4"]
+script = ExtResource("8_sonwr")
+area = 0.25
+damage = 0.0
+cooldown = 0.0
+description = "+%25 Area"
+metadata/_custom_type_script = "uid://dxrnue3daoiom"
+
+[sub_resource type="Resource" id="Resource_87nkv"]
+script = ExtResource("8_sonwr")
+area = 0.0
+damage = 0.0
+cooldown = -0.2
+description = "-0.2s Cooldown"
+metadata/_custom_type_script = "uid://dxrnue3daoiom"
+
+[sub_resource type="Resource" id="Resource_7fjtp"]
+script = ExtResource("8_sonwr")
+area = 0.0
+damage = 2.0
+cooldown = 0.0
+description = "+2 Damage"
+metadata/_custom_type_script = "uid://dxrnue3daoiom"
+
+[resource]
+script = ExtResource("5_0m5i6")
+angular_speed = 10.0
+area = 0.5
+damage = 1.0
+cooldown = 1.3
+speed = 0.0
+projectile_node = ExtResource("4_bxm45")
+upgrades = Array[ExtResource("7_2q626")]([SubResource("Resource_ju6f5"), SubResource("Resource_w0s65"), SubResource("Resource_67rx4"), SubResource("Resource_87nkv"), SubResource("Resource_7fjtp")])
+item_needed = ExtResource("3_nthip")
+evolution = ExtResource("1_hbjj8")
+sound = ExtResource("6_j0lm4")
+particle = ExtResource("4_7wnbx")
+title = "Forcefield"
+icon = ExtResource("2_7wnbx")
+texture = ExtResource("2_7wnbx")
+metadata/_custom_type_script = "uid://bfwtgs2sj48bi"

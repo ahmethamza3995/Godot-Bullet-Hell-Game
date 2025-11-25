@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=5 format=3 uid="uid://bupkkteqbrgmx"]
+
+[ext_resource type="Script" uid="uid://dby207qjtguv5" path="res://scenes/PickupResource.gd" id="1_danec"]
+[ext_resource type="Resource" uid="uid://ct2uks3roccdp" path="res://Resources/Pickups/Blue Gem.tres" id="2_gbsjx"]
+[ext_resource type="Script" uid="uid://bck7uluredqp0" path="res://scenes/EnemyType.gd" id="3_0164s"]
+[ext_resource type="Texture2D" uid="uid://b1kvri4gfp4jx" path="res://assets/Animated Enemies/008_Cloak.png" id="4_han68"]
+
+[resource]
+script = ExtResource("3_0164s")
+title = "Cloak"
+texture = ExtResource("4_han68")
+health = 70.0
+damage = 70.0
+frames = 4
+drops = Array[ExtResource("1_danec")]([ExtResource("2_gbsjx")])
+metadata/_custom_type_script = "uid://bck7uluredqp0"

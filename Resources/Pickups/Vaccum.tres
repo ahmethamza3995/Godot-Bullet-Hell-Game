@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PickupMagnet" load_steps=4 format=3 uid="uid://2cdbbm13ia7p"]
+
+[ext_resource type="Texture2D" uid="uid://b8j12qawgs3fy" path="res://assets/Pickups/Sprite-Vaccum.png" id="1_nw446"]
+[ext_resource type="Script" uid="uid://cdoqb6vkvtj36" path="res://scenes/Vaccum.gd" id="2_amd1p"]
+[ext_resource type="AudioStream" uid="uid://bloarufwdivoa" path="res://assets/SFX/vaccum.wav" id="3_amd1p"]
+
+[resource]
+script = ExtResource("2_amd1p")
+title = "Vaccum"
+icon = ExtResource("1_nw446")
+description = ""
+sound = ExtResource("3_amd1p")
+weight = 2.0
+metadata/_custom_type_script = "uid://cdoqb6vkvtj36"

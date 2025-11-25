@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Lightning" load_steps=7 format=3 uid="uid://bx1bylc4egdcg"]
+
+[ext_resource type="Texture2D" uid="uid://1cw68s7lqfdv" path="res://assets/Weapon & Items/Sprite-LightningRing-Evolved.png" id="1_lid8i"]
+[ext_resource type="PackedScene" uid="uid://ojvwgwnw1ase" path="res://scenes/projectile.tscn" id="2_6pq6e"]
+[ext_resource type="Script" uid="uid://cecbu30yfbsm5" path="res://scenes/Lightning.gd" id="3_611ro"]
+[ext_resource type="AudioStream" uid="uid://dy3yu7pr73e3m" path="res://assets/SFX/lightning-strike.wav" id="4_6pq6e"]
+[ext_resource type="Texture2D" uid="uid://bsf0giib5pgdi" path="res://assets/Weapon & Items/Sprite-Lightning-Evolved.png" id="4_rli0t"]
+[ext_resource type="Script" uid="uid://br43tdi2jmpfw" path="res://scenes/Upgrade.gd" id="5_3qshp"]
+
+[resource]
+script = ExtResource("3_611ro")
+amount = 7
+damage = 10.0
+cooldown = 2.0
+speed = 0.0
+projectile_node = ExtResource("2_6pq6e")
+upgrades = Array[ExtResource("5_3qshp")]([])
+sound = ExtResource("4_6pq6e")
+title = "Lightning Evolved"
+icon = ExtResource("1_lid8i")
+texture = ExtResource("4_rli0t")
+metadata/_custom_type_script = "uid://cecbu30yfbsm5"

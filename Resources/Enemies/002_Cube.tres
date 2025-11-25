@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=5 format=3 uid="uid://cp332rqq2yqtv"]
+
+[ext_resource type="Script" uid="uid://dby207qjtguv5" path="res://scenes/PickupResource.gd" id="1_lihys"]
+[ext_resource type="Resource" uid="uid://ct2uks3roccdp" path="res://Resources/Pickups/Blue Gem.tres" id="2_qupdq"]
+[ext_resource type="Script" uid="uid://bck7uluredqp0" path="res://scenes/EnemyType.gd" id="3_opoau"]
+[ext_resource type="Texture2D" uid="uid://bdwd7o4rwe0v0" path="res://assets/Animated Enemies/002_Cube.png" id="4_4dttv"]
+
+[resource]
+script = ExtResource("3_opoau")
+title = "Cube"
+texture = ExtResource("4_4dttv")
+health = 10.0
+damage = 10.0
+frames = 4
+drops = Array[ExtResource("1_lihys")]([ExtResource("2_qupdq")])

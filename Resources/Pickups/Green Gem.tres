@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Gem" load_steps=4 format=3 uid="uid://rah58n5axpw5"]
+
+[ext_resource type="Texture2D" uid="uid://clr6q0ukak85q" path="res://assets/Level Up & Option/green_gem.png" id="1_1ldgj"]
+[ext_resource type="Script" uid="uid://b4xmi0ufflolq" path="res://scenes/Gem.gd" id="2_dawop"]
+[ext_resource type="AudioStream" uid="uid://dsnmnp2il8xbp" path="res://assets/SFX/gaining-xp.wav" id="3_dawop"]
+
+[resource]
+script = ExtResource("2_dawop")
+XP = 2.0
+title = "Green Gem"
+icon = ExtResource("1_1ldgj")
+description = "Gains experience"
+sound = ExtResource("3_dawop")
+metadata/_custom_type_script = "uid://b4xmi0ufflolq"

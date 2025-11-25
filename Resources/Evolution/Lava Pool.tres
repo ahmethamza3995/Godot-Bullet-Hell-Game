@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MultiDamagingArea" load_steps=7 format=3 uid="uid://d1o3w4nca1atu"]
+
+[ext_resource type="Texture2D" uid="uid://mm6j47elrdn6" path="res://assets/Weapon & Items/Sprite-LavaPuddle-Evolution-Alternative.png" id="1_due3m"]
+[ext_resource type="Material" uid="uid://b8qr77im52ifr" path="res://Particles/Weapon Particles/fire.tres" id="2_5j2dq"]
+[ext_resource type="PackedScene" uid="uid://ojvwgwnw1ase" path="res://scenes/projectile.tscn" id="2_due3m"]
+[ext_resource type="Script" uid="uid://dg7eypwen3k3c" path="res://scenes/Weapon Scripts/MultiDamagingArea.gd" id="3_5j2dq"]
+[ext_resource type="AudioStream" uid="uid://dhbjrup0fkfnn" path="res://assets/SFX/swipe.wav" id="4_ap1bf"]
+[ext_resource type="Script" uid="uid://br43tdi2jmpfw" path="res://scenes/Upgrade.gd" id="5_5hdqr"]
+
+[resource]
+script = ExtResource("3_5j2dq")
+amount = 7
+area = 5.0
+delay = 0.1
+damage = 8.0
+cooldown = 4.0
+speed = 0.0
+projectile_node = ExtResource("2_due3m")
+upgrades = Array[ExtResource("5_5hdqr")]([])
+sound = ExtResource("4_ap1bf")
+particle = ExtResource("2_5j2dq")
+title = "Lava Pool"
+icon = ExtResource("1_due3m")
+texture = ExtResource("1_due3m")
+metadata/_custom_type_script = "uid://dg7eypwen3k3c"

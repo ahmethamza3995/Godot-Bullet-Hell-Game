@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Circular" load_steps=6 format=3 uid="uid://c1canp0v4p1lj"]
+
+[ext_resource type="Texture2D" uid="uid://dkpxgjym07squ" path="res://assets/Weapon & Items/Sprite-Axe-Evolved.png" id="1_mk2x1"]
+[ext_resource type="Material" uid="uid://b7y7ur2g1l8wr" path="res://Particles/Weapon Particles/Magic.tres" id="2_nkpmv"]
+[ext_resource type="PackedScene" uid="uid://ojvwgwnw1ase" path="res://scenes/projectile.tscn" id="2_ug8vy"]
+[ext_resource type="Script" uid="uid://cqt4g3qptxlm0" path="res://scenes/CircularWeapon.gd" id="3_l8fab"]
+[ext_resource type="Script" uid="uid://br43tdi2jmpfw" path="res://scenes/Upgrade.gd" id="4_53d1b"]
+
+[resource]
+script = ExtResource("3_l8fab")
+angular_speed = 270
+radius = 75
+amount = 7
+damage = 10.0
+cooldown = 2.0
+speed = 0.0
+projectile_node = ExtResource("2_ug8vy")
+upgrades = Array[ExtResource("4_53d1b")]([])
+particle = ExtResource("2_nkpmv")
+title = "Evolved Axe"
+icon = ExtResource("1_mk2x1")
+texture = ExtResource("1_mk2x1")
+metadata/_custom_type_script = "uid://cqt4g3qptxlm0"

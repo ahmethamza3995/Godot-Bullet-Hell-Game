@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="Circular" load_steps=15 format=3 uid="uid://dvqjtx2m5ke63"]
+
+[ext_resource type="PackedScene" uid="uid://ojvwgwnw1ase" path="res://scenes/projectile.tscn" id="1_ehqje"]
+[ext_resource type="Resource" uid="uid://c1canp0v4p1lj" path="res://Resources/Evolution/Evolved Axe.tres" id="1_hf7mi"]
+[ext_resource type="Script" uid="uid://cqt4g3qptxlm0" path="res://scenes/CircularWeapon.gd" id="2_ef10s"]
+[ext_resource type="Resource" uid="uid://7v26p6hcdydn" path="res://Resources/Passive Items/Recovery.tres" id="3_fdlal"]
+[ext_resource type="Texture2D" uid="uid://dty62hptkc7h6" path="res://assets/Weapon & Items/Sprite-Axe.png" id="3_hf7mi"]
+[ext_resource type="Material" uid="uid://b7y7ur2g1l8wr" path="res://Particles/Weapon Particles/Magic.tres" id="4_cxjps"]
+[ext_resource type="Script" uid="uid://br43tdi2jmpfw" path="res://scenes/Upgrade.gd" id="4_fdlal"]
+[ext_resource type="Script" uid="uid://dnagbs87rbypc" path="res://scenes/CircularUpgrade.gd" id="5_ef10s"]
+[ext_resource type="AudioStream" uid="uid://dpwk6ea5ob24u" path="res://assets/SFX/axe swipe.wav" id="7_4jq1r"]
+
+[sub_resource type="Resource" id="Resource_hf7mi"]
+script = ExtResource("5_ef10s")
+angular_speed = 0.0
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Projectile"
+metadata/_custom_type_script = "uid://dnagbs87rbypc"
+
+[sub_resource type="Resource" id="Resource_ef10s"]
+script = ExtResource("5_ef10s")
+angular_speed = 90.0
+amount = 0
+damage = 0.0
+cooldown = 0.0
+description = "+90 Speed"
+metadata/_custom_type_script = "uid://dnagbs87rbypc"
+
+[sub_resource type="Resource" id="Resource_fdlal"]
+script = ExtResource("5_ef10s")
+angular_speed = 0.0
+amount = 2
+damage = 0.0
+cooldown = 0.0
+description = "+2 Projectile"
+metadata/_custom_type_script = "uid://dnagbs87rbypc"
+
+[sub_resource type="Resource" id="Resource_cxjps"]
+script = ExtResource("5_ef10s")
+angular_speed = 0.0
+amount = 0
+damage = 3.0
+cooldown = 0.0
+description = "+3 Damage"
+metadata/_custom_type_script = "uid://dnagbs87rbypc"
+
+[sub_resource type="Resource" id="Resource_4jq1r"]
+script = ExtResource("5_ef10s")
+angular_speed = 0.0
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Projectile"
+metadata/_custom_type_script = "uid://dnagbs87rbypc"
+
+[resource]
+script = ExtResource("2_ef10s")
+angular_speed = 90
+radius = 75
+amount = 1
+damage = 1.0
+cooldown = 2.0
+speed = 0.0
+projectile_node = ExtResource("1_ehqje")
+upgrades = Array[ExtResource("4_fdlal")]([SubResource("Resource_hf7mi"), SubResource("Resource_ef10s"), SubResource("Resource_fdlal"), SubResource("Resource_cxjps"), SubResource("Resource_4jq1r")])
+item_needed = ExtResource("3_fdlal")
+evolution = ExtResource("1_hf7mi")
+sound = ExtResource("7_4jq1r")
+particle = ExtResource("4_cxjps")
+title = "Axe"
+icon = ExtResource("3_hf7mi")
+texture = ExtResource("3_hf7mi")
+metadata/_custom_type_script = "uid://cqt4g3qptxlm0"

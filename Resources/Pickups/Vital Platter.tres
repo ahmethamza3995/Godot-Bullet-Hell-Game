@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Health" load_steps=4 format=3 uid="uid://b5ocq0nce1nt6"]
+
+[ext_resource type="Texture2D" uid="uid://hx15bthq1mrv" path="res://assets/Pickups/Sprite-Healing.png" id="1_gd50t"]
+[ext_resource type="Script" uid="uid://dm88jmgme5mv1" path="res://scenes/Health.gd" id="2_f25gw"]
+[ext_resource type="AudioStream" uid="uid://bc0iadbyvuwe2" path="res://assets/SFX/collect-food.wav" id="3_f25gw"]
+
+[resource]
+script = ExtResource("2_f25gw")
+amount = 20
+title = "Vital Platter"
+icon = ExtResource("1_gd50t")
+description = ""
+sound = ExtResource("3_f25gw")
+weight = 5.0
+metadata/_custom_type_script = "uid://dm88jmgme5mv1"
